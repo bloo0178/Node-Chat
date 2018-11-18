@@ -16,7 +16,7 @@ class App extends Component {
       username: '',
       landingPage: '',
       socket: io('http://localhost:8000'),
-      users: ["testUser1", "testUser2"] //DELETE TEST USERS
+      users: [] //DELETE TEST USERS
     }
   }
 
@@ -47,7 +47,7 @@ class App extends Component {
     if (this.state.username === '') {
       return (
         <div className="login-container">
-          <Login sendUsername={this.getUsername} socket={this.state.socket} />
+          <Login getUsername={this.getUsername} socket={this.state.socket} />
         </div>
       );
     }

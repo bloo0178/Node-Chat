@@ -15,6 +15,11 @@ class Login extends React.Component {
         })
     }
 
+    handleClick = (event) => {
+        this.props.getUsername(this.state.username);
+        this.props.socket.emit('user joined', this.state.username);
+    }
+
     render() {
         return (
             <div>
