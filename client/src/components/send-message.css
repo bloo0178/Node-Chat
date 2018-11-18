@@ -1,0 +1,13 @@
+.snd-msg-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.snd-msg-container > textArea {
+    width: 80%;
+}
+
+.snd-msg-container > button {
+    align-self: center;
+}
