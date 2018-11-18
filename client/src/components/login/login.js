@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './login.css';
 
 class Login extends React.Component {
     constructor(props) {
@@ -22,13 +22,13 @@ class Login extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="login-container">
                 <input placeholder="Enter Username" onChange={this.handleChange}></input>
-                <button onClick={this.handleClick}>Submit</button>
+                <button onClick={this.handleClick}>Submit</button>   
             </div>
         )
     }
 
 }
 
-export { Login }; 
+export default Login; 

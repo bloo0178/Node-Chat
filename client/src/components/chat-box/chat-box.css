@@ -1,0 +1,38 @@
+.chat-box-container {
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+   }
+
+.chat-box-container > div {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+  
+  .user-list {
+    width: 100vw;
+    overflow-y: auto;
+    max-height: 5em;
+  }
+  
+  .typing-alert {
+    padding-left: 1em;
+    max-height: 2em;
+    min-height: 2em;
+  }
+  
+  .messages { /*need to revisit this 
+    - make it so it scrolls if scalable max-height 
+    is exceeded. Max-height based on % or VH doesn't work? */
+    overflow-y: auto;
+    max-height: 75vh;
+  }
+  
+  .send-message {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    max-height: 5em;
+    min-height: 5em;
+  }
