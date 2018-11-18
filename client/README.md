@@ -1,3 +1,5 @@
+Implement router
+
 Tomorrow's Goals: 
 -DONE - User disconnect notification (tie to Socket ID); or just React event such as "onClose"? Or window event listener? https://stackoverflow.com/questions/36355093/reactjs-browser-tab-close-event
 -DONE - Participant List
